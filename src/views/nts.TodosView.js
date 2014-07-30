@@ -28,9 +28,11 @@ maria.SetView.subclass(nts, 'TodosView', {
                 welFooter = $(this.find('#footer')),
                 welBtnClear = $(this.find('#clear-completed')),
                 welToggleAll = $(this.find('#toggle-all')),
+                welTodoCount = $(this.find('#todo-count')),
                 model = this.getModel(),
                 todosLength = model.size,
-                completedLength = model.completed().length;
+                completedLength = model.completed().length,
+                incompletedLength = model.incompleted().length;
 
             welMain.show();
             welFooter.show();
@@ -53,6 +55,7 @@ maria.SetView.subclass(nts, 'TodosView', {
                 welBtnClear.hide();
             }
 
+            welTodoCount.html('<strong>' + incompletedLength + '<strong> items left');
             welBtnClear.html('Clear completed (' + completedLength + ')');
         },
 
