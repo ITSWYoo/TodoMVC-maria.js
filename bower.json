@@ -1,0 +1,20 @@
+{
+  "name": "MariaTodo",
+  "version": "0.0.1",
+  "authors": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "maria": "~1.1.0",
+    "jquery": "~2.1.1",
+    "todomvc-common": "~0.1.9"
+  }
+}
+x

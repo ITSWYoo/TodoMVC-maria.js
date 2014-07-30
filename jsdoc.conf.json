@@ -1,0 +1,23 @@
+{
+    "tags": {
+        "allowUnknownTags": true
+    },
+    "source": {
+        "include": ["./src"],
+        "includePattern": ".+\\.js(doc)?$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    },
+    "templates": {
+        "systemName": "maria.js로 만들어보는 Todo 웹 애플리케이션",
+        "footer": "",
+        "copyright": "Copyright (c) 2014 ju.uyeong Licensed under the MIT license.",
+        "navType": "vertical",
+        "linenums": true
+    },
+    "opts": {
+        "encoding": "utf8",
+        "destination": "docs",
+        "recurse": true,
+        "private": true
+    }
+}

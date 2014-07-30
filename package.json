@@ -1,0 +1,14 @@
+{
+  "name": "MariaTodo",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-jsdoc": "^0.5.6",
+    "ink-docstrap": "^0.4.12",
+    "jsdoc": "^3.3.0-alpha9"
+  }
+}
