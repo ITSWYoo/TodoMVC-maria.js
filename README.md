@@ -5,10 +5,10 @@
 _(Coming soon)_
 
 ## Documentation
-  * http://uyeong.github.io/TodoMVC-maria.js-
+  * http://uyeong.github.io/TodoMVC-maria.js/docs/
 
 ## Examples
-_(Coming soon)_
+  * http://uyeong.github.io/TodoMVC-maria.js/
 
 ## Release History
 _(Nothing yet)_
