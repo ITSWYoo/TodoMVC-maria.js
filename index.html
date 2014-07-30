@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Maria.js Todo Example</title>
+<link rel="stylesheet" href="bower_components/todomvc-common/base.css"/>
+</head>
+<body>
+
+<footer id="info">
+    <p>Double-click to edit a todo</p>
+    <p>Created by <a href="http://github.com/petermichaux">Peter Michaux</a></p>
+    <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+</footer>
+
+<script src="bower_components/maria/maria.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="src/namespace.js"></script>
+<script src="src/models/nts.TodoModel.js"></script>
+<script src="src/models/nts.TodosModel.js"></script>
+<script src="src/controllers/nts.TodosController.js"></script>
+<script src="src/controllers/nts.TodoController.js"></script>
+<script src="src/views/nts.TodoView.js"></script>
+<script src="src/views/nts.TodosView.js"></script>
+<script src="src/templates/nts.TodoTemplate.js"></script>
+<script src="src/templates/nts.TodosTemplate.js"></script>
+<script src="src/util.js"></script>
+<script>
+    var todosModel = new nts.TodosModel(),
+        todosController = new nts.TodosController(),
+        todosView = new nts.TodosView(todosModel);
+
+    document.body.insertBefore(todosView.build(), document.body.firstChild);
+</script>
+</body>
+</html>
