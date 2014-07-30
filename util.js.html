@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Index</title>
+    <title>JSDoc: Source: util.js</title>
     
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,46 +17,42 @@
 
 <div id="main">
     
-    <h1 class="page-title">Index</h1>
+    <h1 class="page-title">Source: util.js</h1>
     
     
 
 
     
-
-
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
     <section>
-        <article><h1>TodoMVC with maria.js</h1>
-<p>전통적인 smalltalk-80의 MVC 이해를 위해 maria.js를 활용하여 개발한 TodoMVC.</p>
-<h2>Getting Started</h2>
-<p><em>(Coming soon)</em></p>
-<h2>Documentation</h2>
-<p><em>(Coming soon)</em></p>
-<h2>Examples</h2>
-<p><em>(Coming soon)</em></p>
-<h2>Release History</h2>
-<p><em>(Nothing yet)</em></p>
-<h2>License</h2>
-<p>Copyright (c) 2014 ju.uyeong
-Licensed under the MIT.</p></article>
+        <article>
+            <pre class="prettyprint source"><code>/**
+ * 앞 뒤 공백을 제거하여 반환한다.
+ * @param {string} str
+ * @returns {string}
+ */
+nts.trim = function(str) {
+    return str.replace(/^\s+|\s+$/g, '');
+};
+
+/**
+ * 문자 '&'와 '&lt;'을 이스케이프하여 반환한다.
+ * @param {string} str
+ * @returns {string}
+ */
+nts.escapeHTML = function(str){
+    return str.replace('&', '&amp;').replace('&lt;', '&lt;');
+};
+
+/**
+ * 정수가 엔터키에 해당하는지 검증하여 반환한다.
+ * @param {number} keyCode
+ * @returns {boolean}
+ */
+nts.isEnterKeyCode = function(keyCode){
+    return keyCode === 13;
+};</code></pre>
+        </article>
     </section>
-
-
 
 
 

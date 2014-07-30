@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Index</title>
+    <title>JSDoc: Source: templates/nts.TodosTemplate.js</title>
     
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,46 +17,37 @@
 
 <div id="main">
     
-    <h1 class="page-title">Index</h1>
+    <h1 class="page-title">Source: templates/nts.TodosTemplate.js</h1>
     
     
 
 
     
-
-
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
     <section>
-        <article><h1>TodoMVC with maria.js</h1>
-<p>전통적인 smalltalk-80의 MVC 이해를 위해 maria.js를 활용하여 개발한 TodoMVC.</p>
-<h2>Getting Started</h2>
-<p><em>(Coming soon)</em></p>
-<h2>Documentation</h2>
-<p><em>(Coming soon)</em></p>
-<h2>Examples</h2>
-<p><em>(Coming soon)</em></p>
-<h2>Release History</h2>
-<p><em>(Nothing yet)</em></p>
-<h2>License</h2>
-<p>Copyright (c) 2014 ju.uyeong
-Licensed under the MIT.</p></article>
+        <article>
+            <pre class="prettyprint source"><code>/**
+ * 할 일 리스트 템플릿
+ * @static
+ */
+nts.TodosTemplate =
+    '&lt;section id="todoapp">' +
+        '&lt;header id="header">' +
+            '&lt;h1>todos&lt;/h1>' +
+            '&lt;input id="new-todo" placeholder="What needs to be done?" autofocus>' +
+        '&lt;/header>' +
+        '&lt;section id="main">' +
+            '&lt;input id="toggle-all" type="checkbox">' +
+            '&lt;label for="toggle-all">Mark all as completed&lt;/label>' +
+            '&lt;ul id="todo-list">&lt;/ul>' +
+        '&lt;/section>' +
+        '&lt;footer id="footer">' +
+            '&lt;span id="todo-count">&lt;/span>' +
+            '&lt;button id="clear-completed">&lt;/button>' +
+        '&lt;/footer>' +
+    '&lt;/section>'
+;</code></pre>
+        </article>
     </section>
-
-
 
 
 
